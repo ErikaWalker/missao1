@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>competencia</title>
+    <title>Adicionar Etapa</title>
 </head>
 
 <body>
 
     <li><a href="Educador.html">Início</a></li>
 
-    <h1> Cadastro de Competência </h1>
+    <h1> Elementos da Competência ( Etapa - Competência ) </h1>
+
+    <br>
+
     <form>
 
         <label> Selecione o nível Bloom </label>
@@ -25,32 +28,24 @@
             <option>Avaliar</option>
             <option>Criar</option>
         </select>
-        <br><br>
 
-        <label for="verbo"> Selecione o verbo </label>
-        <input list="verbos" name="verbo" id="verbo">
 
-        <datalist id="verbos">
+        <label for="forca" style="margin-left: 4%;"></label>
+        <input list="forcas" name="forca" id="forca" placeholder="Selecione o nível de força">
+
+        <datalist id="forcas">
             <option value=" ">
-            <option value="Listar">
-            <option value="Relembrar">
-            <option value="Reconhecer">
-            <option value="Identificar">
-            <option value="Localizar">
-            <option value="Descrever">
-            <option value="Citar">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
         </datalist>
 
-        <br><br>
-
-        <label> Descrição </label>
-        <textarea rows="4" cols="50"></textarea>
         <input type="submit" value="Enviar">
+
     </form>
-
-    <br>
-
-
 </body>
 
 </html>

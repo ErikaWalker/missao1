@@ -33,7 +33,7 @@
       <script>
         let Blooms = [];
 
-        // Função para cadastrar Bloom
+        
         document
           .getElementById("cadastro")
           .addEventListener("submit", function (e) {
@@ -45,7 +45,7 @@
             document.getElementById("nome").value = "";
           });
 
-        // Função para exibir Bloom na tabela
+        
         function exibirBloom() {
           const tableBody = document.getElementById("bloomTableBody");
           tableBody.innerHTML = "";
@@ -64,7 +64,7 @@
           });
         }
 
-        // Função para editar Bloom
+      
         function editarBloom(id) {
           const nome = prompt(
             "Editar Nome:",
@@ -77,7 +77,7 @@
           }
         }
 
-        // Função para excluir Bloom
+      
         function excluirBloom(id) {
           const confirmacao = confirm(
             "Tem certeza que deseja excluir este Bloom?"
@@ -88,8 +88,9 @@
           }
         }
 
-        // Inicializar a tabela com dados existentes, se houver
+      
         exibirBloom();
+        
       </script>
     </form>
 
